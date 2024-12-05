@@ -11,17 +11,50 @@
     flex-direction: column;
 }
 
-.header, .content, .footer {
+.header, 
+.contents, 
+.footer {
     background-color: #1F2937;
 }
 
 .main.section > .header {
-    border: 1px solid white;
-
-    height: 100px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.main.section > .content {
+.header-content-position {
+    /* border: 1px solid darkgray; */
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+ul {
+    list-style-type: none;
+    
+    display: flex;
+    gap: 35px;
+}
+
+a {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+.main.section > .contents {
     border: 1px solid gray;
 
     height: 500px;
